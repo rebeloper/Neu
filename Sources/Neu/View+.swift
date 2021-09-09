@@ -23,8 +23,14 @@ public extension View {
         )
     }
     
-    func neuOuterShadow(darkShadow: Color = Color.neuDarkShadow, lightShadow: Color = Color.neuLightShadow, offset: CGFloat = 6, radius:CGFloat = 3) -> some View {
-        modifier(NeuOuterShadowViewModifier(darkShadowColor: darkShadow, lightShadowColor: lightShadow, offset: offset, radius: radius))
+    func neuOuterShadow(darkShadow: Color = Color.neuDarkShadow,
+                        lightShadow: Color = Color.neuLightShadow,
+                        offset: CGFloat = 6,
+                        radius:CGFloat = 3) -> some View {
+        modifier(NeuOuterShadowViewModifier(darkShadowColor: darkShadow,
+                                            lightShadowColor: lightShadow,
+                                            offset: offset,
+                                            radius: radius))
     }
     
     func inverseMask<Mask>(_ mask: Mask) -> some View where Mask: View {

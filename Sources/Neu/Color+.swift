@@ -8,7 +8,7 @@
 import SwiftUI
 
 public extension Color {
-    static let neuDarkShadow = Color("NeuLightShadow", bundle: Bundle.module)
+    static let neuDarkShadow = Color("NeuDarkShadow", bundle: Bundle.module)
     static let neuLightShadow = Color("NeuLightShadow", bundle: Bundle.module)
     static let neuPrimary = Color("NeuPrimary", bundle: Bundle.module)
     static let neuSecondary = Color("NeuSecondary", bundle: Bundle.module)
