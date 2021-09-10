@@ -10,8 +10,8 @@ import SwiftUI
 public extension Button {
 
     func neuButtonStyle<S : Shape>(_ content: S,
-                                    fillColor : Color = .neuPrimary,
-                                    foregroundColor : Color = .neuSecondary,
+                                    fillColor : Color = .neuFill,
+                                    foregroundColor : Color = .neuForeground,
                                     darkShadowColor: Color = Color.neuDarkShadow,
                                     lightShadowColor: Color = Color.neuLightShadow,
                                     pressedEffect : NeuButtonPressedEffect = .hard,
