@@ -9,16 +9,16 @@ import SwiftUI
 
 public struct NeuInnerShadowViewModifier<S: Shape> : ViewModifier {
     private var shape: S
-    private var darkShadowColor : Color = .black
-    private var lightShadowColor : Color = .white
-    private var spread: CGFloat = 0.5    //The value of spread is between 0 to 1. Higher value makes the shadow look more intense.
-    private var radius: CGFloat = 10
+    private var darkShadowColor: Color
+    private var lightShadowColor: Color
+    private var spread: CGFloat // The value of spread is between 0 to 1. Higher value makes the shadow look more intense.
+    private var radius: CGFloat
     
     public init(shape: S,
-                darkShadowColor: Color,
-                lightShadowColor: Color,
-                spread: CGFloat,
-                radius: CGFloat) {
+                darkShadowColor: Color = .neuDarkShadow,
+                lightShadowColor: Color = .neuLightShadow,
+                spread: CGFloat = 0.5,
+                radius: CGFloat = 10) {
         self.shape = shape
         self.darkShadowColor = darkShadowColor
         self.lightShadowColor = lightShadowColor

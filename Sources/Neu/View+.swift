@@ -10,8 +10,8 @@ import SwiftUI
 public extension View {
 
     func neuInnerShadow<S : Shape>(_ content: S,
-                                    darkShadow: Color = Color.neuDarkShadow,
-                                    lightShadow: Color = Color.neuLightShadow,
+                                    darkShadow: Color = .neuDarkShadow,
+                                    lightShadow: Color = .neuLightShadow,
                                     spread: CGFloat = 0.5,
                                     radius: CGFloat = 10) -> some View {
         modifier(
@@ -23,8 +23,8 @@ public extension View {
         )
     }
     
-    func neuOuterShadow(darkShadow: Color = Color.neuDarkShadow,
-                        lightShadow: Color = Color.neuLightShadow,
+    func neuOuterShadow(darkShadow: Color = .neuDarkShadow,
+                        lightShadow: Color = .neuLightShadow,
                         offset: CGFloat = 6,
                         radius:CGFloat = 3) -> some View {
         modifier(NeuOuterShadowViewModifier(darkShadowColor: darkShadow,

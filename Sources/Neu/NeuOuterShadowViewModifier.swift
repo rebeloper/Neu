@@ -13,10 +13,10 @@ public struct NeuOuterShadowViewModifier: ViewModifier {
     private var offset: CGFloat
     private var radius : CGFloat
     
-    public init(darkShadowColor: Color,
-                lightShadowColor: Color,
-                offset: CGFloat,
-                radius: CGFloat) {
+    public init(darkShadowColor: Color = .neuDarkShadow,
+                lightShadowColor: Color = .neuLightShadow,
+                offset: CGFloat = 6,
+                radius: CGFloat = 3) {
         self.darkShadowColor = darkShadowColor
         self.lightShadowColor = lightShadowColor
         self.offset = offset
