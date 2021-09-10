@@ -61,7 +61,7 @@ public struct NeuButtonStyle<S: Shape>: ButtonStyle {
         configuration.label
             .foregroundColor(foregroundColor)
             .padding(.horizontal, horizontalPadding)
-            .padding(.vertical, horizontalPadding)
+            .padding(.vertical, verticalPadding)
             .scaleEffect(configuration.isPressed ? onPressedScaleDownPercentage : 1)
             .background(
                 ZStack{
